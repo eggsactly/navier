@@ -9,6 +9,7 @@ It's also extended off the repo at
 
 # History 
 2012/13 - Accelerate (Haskell) and Ypnos (Haskell) implementations in progress.
+
 2020 - Implementation of a bitmap upload interface for airfoil shapes. 
 
 # Building and Running
