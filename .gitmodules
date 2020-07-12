@@ -1,0 +1,3 @@
+[submodule "libBitmapWag"]
+	path = libBitmapWag
+	url = https://github.com/eggsactly/libBitmapWag
