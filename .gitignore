@@ -1,7 +1,8 @@
 *.o
-*.mod
 *.mpeg
 *.ppm
 *.jpg
 *.jpeg
+*.bmp
 navier
+
