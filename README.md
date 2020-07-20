@@ -1,5 +1,7 @@
 # About
 
+![https://imgur.com/ndAVmmp](screen shot)
+
 This project provides a cool way to visualize fluid flow around objects. 
 The sample program is a slightly modified version of a Navier-Stokes fluid 
 dynamics code by Griebel et al. [1].
@@ -16,7 +18,7 @@ It's also extended off the repo at
 
 ```
 make
-./navier
+./navier -i air-foil.bmp 
 ^C
 ```
 ^C when you're done running.
