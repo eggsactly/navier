@@ -5,15 +5,15 @@ CFLAGS:=-O3 -Wall -pg -DAPP_NAME=\"$(EXE)\" -IlibBitmapWag/include/
 .c.o:
 	$(CC) -c $(CFLAGS) $<
 
-.PHONY: all
-all:    $(EXE)
+.PHONY: all 
+all:    $(EXE) air-foil.bmp
 
 .PHONY: clean
 clean:
-	rm -f *.o navier
+	rm -f *.o navier air-foil.bmp
 
 $(EXE): alloc.o boundary.o init.o main.o output.o simulation.o \
-libBitmapWag/lib/libBitmapWag.a
+libBitmapWag/lib/libBitmapWag.a 
 	$(CC) $(CFLAGS) -o $@ $^ -lm
 
 boundary.o       : datadef.h
@@ -26,4 +26,7 @@ simulation.o     : datadef.h init.h
 libBitmapWag/lib/libBitmapWag.a: libBitmapWag/libBitmapWag.c 
 libBitmapWag/lib/libBitmapWag.a: libBitmapWag/libBitmapWag.h
 	$(MAKE) -C libBitmapWag/
+
+air-foil.bmp: air-foil.svg
+	convert $^ $@ 
 

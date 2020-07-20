@@ -224,6 +224,11 @@ int main(int argc, char *argv[])
                 {
                     fprintf(stderr, "%s: error: GetBitmapWagPixel %d %d: %s.\n", 
                         APP_NAME, i, j, ErrorsToStringBitmapWag(error));
+                    if(error == BITMAPWAG_BIBITS_NOT_SUPPORTED)
+                    {
+                           fprintf(stderr, "%s: info: BitsPerPixel are %d.\n", 
+                                APP_NAME, img.bmih.biBitCount);
+                    }
                     return -1;
                 }
 
