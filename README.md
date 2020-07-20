@@ -1,6 +1,6 @@
 # About
 
-![https://i.imgur.com/ndAVmmp.jpg](screen shot)
+![screen shot](https://i.imgur.com/ndAVmmp.jpg)
 
 This project provides a cool way to visualize fluid flow around objects. 
 The sample program is a slightly modified version of a Navier-Stokes fluid 
